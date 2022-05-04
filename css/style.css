@@ -529,7 +529,7 @@ body {
 
 /* Media Queries*/
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 320px) {
   .header__nav {
     display: none;
   }
