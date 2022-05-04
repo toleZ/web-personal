@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JAM Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css" />
+
+    <!-- Stilos CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Inicio</title>
+  </head>
+
+    <body>
+    <header class="header">
+      <img src="../img/jt-logo.png" alt="jt-logo" class="header__logo" />
+
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <a href="../index.html" class="nav__link"
+            ><li class="nav__item"></li>
+            Inicio</a
+          >
+          <a href="blog.html" class="nav__link"
+            ><li class="nav__item"></li>
+            Blog</a
+          >
+          <a href="sobre-mi.html" class="nav__link"
+            ><li class="nav__item"></li>
+            Sobre mi</a
+          >
+          <a href="galeria.html" class="nav__link"
+            ><li class="nav__item"></li>
+            Galeria</a
+          >
+          <a href="contacto.html" class="nav__link"
+            ><li class="nav__item"></li>
+            Contacto</a
+          >
+        </ul>
+      </nav>
+
+      <nav class="header__nav--mobile">
+        <span class="jam jam-menu"></span>
+      </nav>
+    </header>
+
+    <main class="contact__container">
+        <section class="contact__form">
+            <h2 class="form__title">Formulario de contacto</h2>
+
+            <form class="form">
+                <label for="name" class="contact-form__label">Nombre:</label>
+                <input type="text" name="name" id="name" placeholder="Ingrese su nombre" class="contact-form__input">
+
+                <label for="email" class="contact-form__label">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Ingrese su email" class="contact-form__input">
+
+                <label for="phone" class="contact-form__label">Telefono:</label>
+                <input type="number" name="phone" id="phone" placeholder="Ingrese su telefono" class="contact-form__input">
+
+                <label for="consulta" class="contact-form__label">Consulta:</label>
+                <textarea name="consulta" id="conlsuta" cols="30" rows="10" class="contact-form__textarea"></textarea>
+
+                <input type="submit" name="submit" id="submit" class="contact-form__input--submit">
+            </form>
+        </section>
+
+        <section class="contact__map">
+            <h2 class="map__title">Ubicacion</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13398.647137779722!2d-60.7298159302246!3d-32.907109399999975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b653017a1d34a9%3A0x61abb3054bd54474!2zTWNEb25hbGTigJlz!5e0!3m2!1ses-419!2sar!4v1651435694055!5m2!1ses-419!2sar"
+            class="map"></iframe>
+        </section>
+    </main>
+
+    <footer class="footer">
+      <h3 class="footer__title">
+        Quieres recibir notificaciones de nuestros posteos?
+      </h3>
+
+      <form class="footer__form">
+        <label for="email" class="form__label">Email:</label>
+        <input type="email" name="email" class="form__input" />
+        <input type="submit" class="form__input--submit" />
+      </form>
+
+      <ul class="footer__social">
+        <a href="#" class="social__link"
+          ><li class="social__item">
+            <img
+              src="../img/whatsapp-logo.png"
+              alt="whatsapp-logo"
+              class="social__img img--whatsapp"
+            /></li
+        ></a>
+        <a href="#" class="social__link"
+          ><li class="social__item">
+            <img
+              src="../img/instagram-logo.png"
+              alt="instagram-logo"
+              class="social__img img--instagram"
+            /></li
+        ></a>
+        <a href="#" class="social__link"
+          ><li class="social__item">
+            <img
+              src="../img/twitter-logo.png"
+              alt="twitter-logo"
+              class="social__img img--twitter"
+            /></li
+        ></a>
+        <a href="#" class="social__link"
+          ><li class="social__item">
+            <img
+              src="../img/facebook-logo.png"
+              alt="facebook-logo"
+              class="social__img img--facebook"
+            /></li
+        ></a>
+      </ul>
+
+      <span class="footer__copy"> &copy;2022 Creado por Juan Cruz Toloy </span>
+    </footer>
+</html>
