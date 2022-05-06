@@ -28,7 +28,11 @@
     <header class="header">
       <img src="img/jt-logo.png" alt="jt-logo" class="header__logo" />
 
-      <nav class="header__nav">
+      <a href="#bottom__menu" class="header__nav--mobile">
+        <span class="jam jam-menu"></span>
+      </a>
+
+      <nav class="header__nav" id="bottom__menu">
         <ul class="nav__list">
           <a href="index.html" class="nav__link"
             ><li class="nav__item"></li>
@@ -51,10 +55,6 @@
             Contacto</a
           >
         </ul>
-      </nav>
-
-      <nav class="header__nav--mobile">
-        <span class="jam jam-menu"></span>
       </nav>
     </header>
 
@@ -172,6 +172,36 @@
       </ul>
 
       <span class="footer__copy"> &copy;2022 Creado por Juan Cruz Toloy </span>
+
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item active">
+            <a class="page-link" href="index.html">1</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="pages/blog.html">2</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link link-hover" href="pages/sobre-mi.html">3</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="pages/galeria.html">4</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="pages/contacto.html">5</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="pages/blog.html" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </footer>
 
     <!-- Bootstap -->
