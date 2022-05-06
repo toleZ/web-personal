@@ -42,6 +42,11 @@ body {
   padding: 1rem;
 }
 
+.nav__list {
+  margin: 0;
+  padding: 0;
+}
+
 .nav__link {
   font-size: 1.3rem;
   color: white;
