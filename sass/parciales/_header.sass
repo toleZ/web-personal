@@ -1,0 +1,46 @@
+@import "_variables.sass"
+
+.header
+  background-color: $color-1e
+  width: 100%
+  height: 120px
+  border-bottom: 4px solid $color-52
+  overflow: hidden
+  position: fixed
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+
+.header__logo
+  width: 100px
+  height: 100px
+  margin-left: 1rem
+
+.header__nav
+  background-color: $color-41
+  border-radius: 2rem
+  margin-right: 1rem
+  padding: 1rem
+
+.nav__list
+  margin: 0
+  padding: 0
+
+.nav__link
+  font-size: 1.3rem
+  color: white
+  text-decoration: none
+  transition: all 300ms
+
+.nav__link:hover
+  color: $color-ca
+  font-style: italic
+
+.nav__item
+  display: inline-block
+  list-style: none
+  margin: 4px
+
+.header__nav--mobile
+  display: none

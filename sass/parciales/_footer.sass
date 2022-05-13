@@ -1,0 +1,112 @@
+@import "_variables.sass"
+
+.footer 
+  background-color: $color-31
+  width: 100%
+  color: white
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.footer__title 
+  text-align: center
+  font-size: 1.2rem
+  padding: 0.5rem
+  margin-bottom: 0.5rem
+
+.footer__form 
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.form__label 
+  position: relative
+  right: 184px
+  font-size: 0.7rem
+
+.form__input,
+.form__input--submit 
+  width: 400px
+  border-radius: 2rem
+  margin-top: 4px
+  transition: all 300ms
+  border: 2px solid $color-52
+
+.form__input:hover,
+.form__input--submit:hover 
+  border: 2px solid $color-ca
+
+.form__input--submit:hover 
+  cursor: pointer
+
+.footer__social 
+  margin-top: 1rem
+  padding-left: 0
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+
+.social__item 
+  list-style: none
+  border-radius: 2rem
+  width: 42px
+  height: 42px
+  margin: 0 4px 0 4px
+  transition: all 1s
+
+.social__item:hover 
+  transform: rotate(360deg)
+  width: 48px
+  height: 48px
+
+.social__img 
+  width: 42px
+  height: 42px
+  border-radius: 2rem
+  transition: all 1s
+
+.social__img:hover 
+  width: 48px
+  height: 48px
+
+
+.img--whatsapp:hover 
+  background-color: #25d366
+
+
+.img--instagram:hover 
+  background: radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%)
+
+.img--twitter:hover 
+  background-color: #1da1f2
+
+.img--facebook:hover 
+  background-color: #1877f2
+
+.footer__copy 
+  margin: 0
+  margin-bottom: 1rem
+  position: static
+
+.page-link 
+  color: $color-31
+
+.page-item.active .page-link 
+  color: $color-31
+  border-color: $color-ca
+  background-color: $color-ca
+
+.page-item:last-child .page-link 
+  border-top-right-radius: 2rem
+  border-bottom-right-radius: 2rem
+
+.page-item:first-child .page-link 
+  border-top-left-radius: 2rem
+  border-bottom-left-radius: 2rem
+
+.page-link:hover 
+  color: $color-ca
+  background-color: $color-24
+  border-color: $color-24

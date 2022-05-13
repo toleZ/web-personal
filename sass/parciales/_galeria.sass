@@ -1,0 +1,52 @@
+@import "_variables.sass"
+
+.galeria__container 
+  width: 100%
+  margin-top: 120px
+  background-color: $color-1e
+
+.galeria__title 
+  font-size: 3rem
+  color: white
+  padding: 1rem
+  font-style: italic
+
+.projects 
+  margin-left: 30px
+  display: grid
+  grid-template-columns: repeat(3, 32%)
+  grid-template-rows: repeat(3, 600px)
+  gap: 20px
+
+.project 
+  border: 4px solid $color-52
+  border-radius: 2rem
+  overflow: hidden
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  color: white
+  transition: all 300ms
+
+.project:hover 
+  border-color: $color-ca
+  background-color: $color-ca
+  cursor: pointer
+
+.project:hover .project__title 
+  animation: project__title 1s linear 1
+
+@keyframes project__title 
+  0%
+    transform: translateX(-500px)
+  100%
+    transform: translateX(0px)
+
+.project__title 
+  font-size: 1.6rem
+  padding: 0.6rem
+
+.project__img 
+  width: 600px
+  height: 600px

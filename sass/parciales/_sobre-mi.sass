@@ -1,0 +1,51 @@
+@import "_variables.sass"
+
+.sobre-mi__container 
+  margin-top: 120px
+  overflow: hidden
+  width: 100%
+  display: grid
+  grid-template-columns: 50% 50%
+  grid-template-rows: 100%
+  grid-template-areas: "sobre-mi__img sobre-mi__info"
+
+.sobre-mi__img 
+  grid-area: sobre-mi__img
+  overflow: hidden
+  height: 800px
+  width: 100%
+
+.sobre-mi__info 
+  grid-area: sobre-mi__info
+  overflow: hidden
+  background-color: $color-1e
+  padding: 1rem
+  color: white
+
+.sobre-mi__title 
+  font-size: 4rem
+
+.sobre-mi__work 
+  font-size: 2rem
+
+.sobre-mi__description 
+  font-size: 1.1rem
+  text-align: justify
+  margin-top: 1rem
+
+.animate-charcter 
+  text-transform: uppercase
+  background-image: linear-gradient(-225deg,#542c36 0%,#4b2c3a 29%,#3b2c40 67%,#332c44 100%)
+  background-size: auto auto
+  background-clip: border-box
+  background-size: 200% auto
+  color: #fff
+  background-clip: text
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  animation: textclip 2s linear infinite
+  display: inline-block
+  font-style: italic
+
+@keyframes textclip 
+  to {background-position: 200% center}
