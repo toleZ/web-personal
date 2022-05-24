@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../img/jt-logo-icon.ico" />
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
@@ -27,7 +28,11 @@
     <header class="header">
       <img src="../img/jt-logo.png" alt="jt-logo" class="header__logo" />
 
-      <nav class="header__nav">
+      <a href="#lateral">
+        <span class="jam jam-menu header__nav--mobile"></span>
+      </a>
+
+      <nav class="header__nav" id="lateral">
         <ul class="nav__list">
           <a href="../index.html" class="nav__link"
             ><li class="nav__item"></li>
@@ -49,11 +54,11 @@
             ><li class="nav__item"></li>
             Contacto</a
           >
-        </ul>
-      </nav>
 
-      <nav class="header__nav--mobile">
-        <span class="jam jam-menu"></span>
+          <a href="" class="close__link">
+            <li class="nav__item close"><span class="jam jam-close"></span></li>
+          </a>
+        </ul>
       </nav>
     </header>
 
@@ -62,21 +67,29 @@
         <li class="post__item">
           <a href="#" class="post__link">
             <article class="post__container">
-              <span class="post__date">Fecha: xx/xx</span>
-              <h3 class="post__title">Titulo del post</h3>
+              <span class="badge bg-secondary color-ca">Nuevo</span>
+              <span class="post__date">7 OCTUBRE, 2020</span>
+              <h3 class="post__title">
+                Prototype en Javascript: una visión práctica
+              </h3>
               <p class="post__paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                necessitatibus quod blanditiis dolores porro doloribus
-                voluptates consequatur temporibus expedita, ad fugiat, eligendi
-                cumque dolor ut corrupti alias. Hic, tenetur enim! Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Unde necessitatibus
-                quod blanditiis dolores porro doloribus voluptates consequatur
-                temporibus expedita, ad fugiat, eligendi cumque dolor ut
-                corrupti alias. Hic, tenetur enim!Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Unde necessitatibus quod
-                blanditiis dolores porro doloribus voluptates consequatur
-                temporibus expedita, ad fugiat, eligendi cumque dolor ut
-                corrupti alias. Hic, tenetur enim!
+                ¿Qué es el Prototype de Javascript? Un mecanismo mediante el
+                cual los objetos en JavaScript heredan características entre sí,
+                palabra de MDN. El problema es que Prototype, como concepto, es
+                tan abstracto en inicio como fundamental en el corto plazo.
+                <br />
+                Y es que algo gordo esconde cuando la búsqueda de .reduce() nos
+                lleva a resultados bajo el título Array.prototype.reduce(),
+                mientras que .toFixed() nos lleva a Number.prototype.toFixed(),
+                y así sucesivamente.
+                <br />
+                Tampoco podemos obviar ese __proto__, esa zona oscura de la
+                consola presente al final de cualquier elemento que
+                inspeccionamos: valores numéricos, arrays, objetos e incluso
+                funciones lo tienen.
+                <br />
+                En Javascript todo parece disponer de un prototipo y todo apunta
+                a que comprenderlo es más que conveniente. Go! 🚀
               </p>
             </article>
           </a>
@@ -85,21 +98,22 @@
         <li class="post__item">
           <a href="#" class="post__link">
             <article class="post__container">
-              <span class="post__date">Fecha: xx/xx</span>
-              <h3 class="post__title">Titulo del post</h3>
+              <span class="badge bg-secondary color-ca">Nuevo</span>
+              <span class="post__date">17 SEPTIEMBRE, 2020</span>
+              <h3 class="post__title">
+                ES2021 / ES12: novedades de la última versión de Javascript
+              </h3>
               <p class="post__paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                necessitatibus quod blanditiis dolores porro doloribus
-                voluptates consequatur temporibus expedita, ad fugiat, eligendi
-                cumque dolor ut corrupti alias. Hic, tenetur enim! Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Unde necessitatibus
-                quod blanditiis dolores porro doloribus voluptates consequatur
-                temporibus expedita, ad fugiat, eligendi cumque dolor ut
-                corrupti alias. Hic, tenetur enim!Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Unde necessitatibus quod
-                blanditiis dolores porro doloribus voluptates consequatur
-                temporibus expedita, ad fugiat, eligendi cumque dolor ut
-                corrupti alias. Hic, tenetur enim!
+                La versión de Javascript ES12 o ECMAScript 2021, desarrollada en
+                GitHub con la ayuda de la comunidad ECMA International, es ya
+                una realidad con geniales inclusiones a las que dar fuegote.
+                <br />
+                Ahondamos en el abanico de novedades que podremos encontrar
+                aquí, integradas en el motor Google Chrome V8 y que puedes
+                consultar en el repositorio de funcionalidades ya integradas por
+                año en Javascript.
+                <br />
+                Allá vamos 🔥
               </p>
             </article>
           </a>
@@ -108,21 +122,22 @@
         <li class="post__item">
           <a href="#" class="post__link">
             <article class="post__container">
-              <span class="post__date">Fecha: xx/xx</span>
-              <h3 class="post__title">Titulo del post</h3>
+              <span class="post__date">12 OCTUBRE, 2017</span>
+              <h3 class="post__title">
+                Tendencias en diseño web 2018: menos es mas
+              </h3>
               <p class="post__paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                necessitatibus quod blanditiis dolores porro doloribus
-                voluptates consequatur temporibus expedita, ad fugiat, eligendi
-                cumque dolor ut corrupti alias. Hic, tenetur enim! Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Unde necessitatibus
-                quod blanditiis dolores porro doloribus voluptates consequatur
-                temporibus expedita, ad fugiat, eligendi cumque dolor ut
-                corrupti alias. Hic, tenetur enim!Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Unde necessitatibus quod
-                blanditiis dolores porro doloribus voluptates consequatur
-                temporibus expedita, ad fugiat, eligendi cumque dolor ut
-                corrupti alias. Hic, tenetur enim!
+                Las tendencias en diseño web para 2018 siguen una senda
+                minimalista en búsqueda de una sofisticada simplicidad por la
+                que distribuciones, contenidos y componentes se reducen a su
+                mínima expresión.
+                <br />
+                Ya no lo queremos todo. Queremos lo justo, pero lo queremos ya.
+                <br />
+                Repasamos aquí algunas de las técnicas y corrientes que
+                protagonizarán el próximo año, una escalada reduccionista con
+                una sensible orientación hacia la conversión. Recuerda: menos es
+                más.
               </p>
             </article>
           </a>
@@ -131,21 +146,31 @@
         <li class="post__item">
           <a href="#" class="post__link">
             <article class="post__container">
-              <span class="post__date">Fecha: xx/xx</span>
-              <h3 class="post__title">Titulo del post</h3>
+              <span class="post__date">1 SEPTIEMBRE, 2020</span>
+              <h3 class="post__title">
+                Programación declarativa VS imperativa en Javascript
+              </h3>
               <p class="post__paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                necessitatibus quod blanditiis dolores porro doloribus
-                voluptates consequatur temporibus expedita, ad fugiat, eligendi
-                cumque dolor ut corrupti alias. Hic, tenetur enim! Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Unde necessitatibus
-                quod blanditiis dolores porro doloribus voluptates consequatur
-                temporibus expedita, ad fugiat, eligendi cumque dolor ut
-                corrupti alias. Hic, tenetur enim!Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Unde necessitatibus quod
-                blanditiis dolores porro doloribus voluptates consequatur
-                temporibus expedita, ad fugiat, eligendi cumque dolor ut
-                corrupti alias. Hic, tenetur enim!
+                Javascript permite un estilo de desarrollo tanto declarativo
+                como imperativo, atendiendo asi a qué objetivo se busca alcanzar
+                (declarativo) o extendiéndose sobre cómo se debe alcanzar un
+                objetivo (imperativo).
+                <br />
+                Si bien las últimas incorporaciones del lenguaje muestran una
+                tendencia hacia un paradigma claramente declarativo, ambos
+                estilos coexisten en la industria actual y suponen diferencias a
+                efectos de optimización, rendimiento, legibilidad o
+                mantenibilidad de nuestras aplicaciones, entre otros.
+                <br />
+                La relación “declarativo === guay” es errónea: la idoneidad de
+                cada paradigma depende de factores como el contexto en el que se
+                implemente un desarrollo, el volumen de los datos a manejar o
+                las prioridades vigentes en relación al equipo o la
+                organización, entre otros.
+                <br />
+                ¿Te resulta confusa esta introducción? Vuelve a ella tras haber
+                leído este leído el artículo en su totalidad y, voilà! Verás que
+                todo cuadra 🙂
               </p>
             </article>
           </a>

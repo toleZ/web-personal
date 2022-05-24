@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../img/jt-logo-icon.ico" />
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
@@ -28,7 +29,11 @@
     <header class="header">
       <img src="../img/jt-logo.png" alt="jt-logo" class="header__logo" />
 
-      <nav class="header__nav">
+      <a href="#lateral">
+        <span class="jam jam-menu header__nav--mobile"></span>
+      </a>
+
+      <nav class="header__nav" id="lateral">
         <ul class="nav__list">
           <a href="../index.html" class="nav__link"
             ><li class="nav__item"></li>
@@ -50,14 +55,14 @@
             ><li class="nav__item"></li>
             Contacto</a
           >
+          
+          <a href="" class="close__link">
+            <li class="nav__item close"><span class="jam jam-close"></span></li>
+          </a>
         </ul>
       </nav>
-
-      <nav class="header__nav--mobile">
-        <span class="jam jam-menu"></span>
-      </nav>
+      
     </header>
-
     <main class="contact__container">
         <section class="contact__form">
             <h2 class="form__title">Formulario de contacto</h2>
@@ -93,7 +98,7 @@
 
       <form class="footer__form">
         <label for="email" class="form__label">Email:</label>
-        <input type="email" name="email" class="form__input" />
+        <input type="email" name="email" class="form__input"/>
         <input type="submit" class="form__input--submit" />
       </form>
 

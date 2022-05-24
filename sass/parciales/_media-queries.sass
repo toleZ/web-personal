@@ -1,19 +1,14 @@
 @import "_variables.sass"
 
-@media screen and (max-width: 320px) 
-  .header__nav 
-    display: none
+@media screen and (max-width: 320px)
+  .header__nav
+    border-radius: 0
   
   .header__nav--mobile 
     display: block
     font-size: 70px
     color: $color-ca
     text-decoration: none
-  
-  #bottom__menu 
-    display: block
-    width: 80%
-    height: 100
   
   .header__logo 
     width: 70px
@@ -22,13 +17,42 @@
   .header__nav--mobile:hover 
     cursor: pointer
   
+  .nav__list
+    display: flex
+    flex-direction: column
+  
+  #lateral
+    top: 0
+    left: -100%
+    z-index: 100
+    position: fixed
+    display: block
+    width: 100%
+    height: 100vh
+    transition: all 800ms
+    &:target
+      left: 0
+  
+  a[href="#lateral"]
+    display: block
+  
+  .close
+    display: block
+    transition: all 300ms
+    &:hover
+      color: $color-ca
+    &__link
+      text-decoration: none
+      color: white
+      font-size: 2rem
+
   .main__info 
     width: 100%
     overflow: hidden
     display: grid
     grid-template-columns: 100%
     grid-template-rows: 200px 300px
-    grid-template-areas: "main__data" "main__img"
+    grid-template-areas: 'main__data' 'main__img'
   
   .main__data 
     width: 100%
@@ -62,32 +86,10 @@
     justify-content: center
     align-items: center
   
-  .posts__container 
-    display: grid
-    grid-template-columns: repeat(1, 100%)
-    grid-template-rows: repeat(4, 150px)
-    grid-template-areas:"post_1""post_2""post_3""post_4"
-    gap: 10px
-  
-  .post 
-    width: 90%
-    height: 150px
-  
-  .post__1 
-    grid-area: post_1
-  
-  .post__2 
-    grid-area: post_2
-  
-  .post__3 
-    grid-area: post_3
-  
-  .post__4 
-    grid-area: post_4
-  
   .post 
     padding: 0.5rem
     overflow: scroll
+    width: 100%
   
   .post__date 
     font-size: 0.6rem
@@ -102,13 +104,13 @@
     font-size: 0.6rem
     text-align: left
   
-  .footer 
+  .footer
     margin-top: 0.5rem
   
   .footer__title 
     font-size: 0.8rem
   
-  .form__label 
+  .form__label
     margin-top: 0
     margin-left: 6.2rem
     font-size: 0.5rem
@@ -148,6 +150,7 @@
   
   .sobre-mi__description 
     font-size: 0.6rem
+    line-height: 20px
   
   .sobre-mi__img 
     display: none
@@ -167,6 +170,9 @@
   
   .project 
     margin-right: 40px
+    &__info
+      margin-top: 12rem
+      align-items: center
   
   .project__img 
     width: 300px
