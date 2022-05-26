@@ -1,0 +1,2 @@
+Aplique meta description y keywords en todas las paginas de la web, tambien cada una de las imagenes tiene su alt correspondiente, al igual que cada una de las paginas tiene su titulo indicando el nombre de la web y la pagina en la que se encuentra navegando. Utilize (en lo posible) el esquema de encebazos utilizando las etiquetas (h1,h2,h3) y evitando las etiquetas como <em> y/o <strong>, etc. 
+Organice todos los archivos y la navegacion facilitando encontrar lo que se esta buscando.
