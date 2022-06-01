@@ -272,6 +272,8 @@ a[href="#lateral"] {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .post {
@@ -313,6 +315,14 @@ a[href="#lateral"] {
   width: 100%;
   margin-top: 120px;
   background-color: #242424;
+}
+
+.posts__title {
+  color: white;
+  text-align: left;
+  padding: 1rem;
+  padding-bottom: 0;
+  font-size: 4rem;
 }
 
 .post__list {
@@ -521,6 +531,11 @@ a[href="#lateral"] {
   margin-left: 0.4rem;
 }
 
+.contact__title {
+  text-align: center;
+  font-size: 4rem;
+}
+
 .contact__container {
   background-color: #1e1e1e;
   width: 100%;
@@ -686,6 +701,10 @@ a[href="#lateral"] {
     grid-area: main__img;
     overflow: hidden;
   }
+  .posts__title {
+    text-align: center;
+    font-size: 2rem;
+  }
   .main__posts {
     display: flex;
     flex-wrap: wrap;
@@ -784,6 +803,10 @@ a[href="#lateral"] {
   .project__img {
     width: 300px;
     height: 250px;
+  }
+  .contact__title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
   }
   .form__title,
   .map__title {
