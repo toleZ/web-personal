@@ -737,7 +737,7 @@ a[href="#lateral"] {
     padding: 0;
   }
   .post__parargraph {
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     text-align: left;
   }
   .footer {
@@ -776,7 +776,7 @@ a[href="#lateral"] {
     margin-bottom: 0.5rem;
   }
   .post__paragraph {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
   .sobre-mi__info {
     text-align: center;
@@ -792,8 +792,9 @@ a[href="#lateral"] {
     font-size: 1.2rem;
   }
   .sobre-mi__description {
-    font-size: 0.6rem;
-    line-height: 20px;
+    font-size: 0.9rem;
+    line-height: 30px;
+    text-align: left;
   }
   .sobre-mi__img {
     display: none;
