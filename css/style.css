@@ -618,7 +618,7 @@ a[href="#lateral"] {
   border-color: #ca3e47;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 390px) {
   .header__nav {
     border-radius: 0;
   }
@@ -654,6 +654,10 @@ a[href="#lateral"] {
   }
   a[href="#lateral"] {
     display: block;
+  }
+  .active {
+    color: #ca3e47;
+    font-style: italic;
   }
   .close {
     display: block;
@@ -750,7 +754,10 @@ a[href="#lateral"] {
     overflow: hidden;
   }
   .post__list {
-    width: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
   }
   .post__item {
     height: 300px;
@@ -764,8 +771,12 @@ a[href="#lateral"] {
   .post__paragraph {
     font-size: 0.7rem;
   }
+  .sobre-mi__info {
+    text-align: center;
+  }
   .sobre-mi__container {
     display: flex;
+    flex-direction: column;
   }
   .sobre-mi__title {
     font-size: 2rem;
@@ -788,13 +799,14 @@ a[href="#lateral"] {
     overflow: hidden;
   }
   .projects {
-    margin-left: 30px;
-    display: grid;
-    grid-template-columns: repeat(1, 300px);
-    grid-template-rows: repeat(9, 300px);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .project {
-    margin-right: 40px;
+    width: 90%;
   }
   .project__info {
     margin-top: 12rem;
@@ -814,6 +826,44 @@ a[href="#lateral"] {
   }
   .map {
     height: 300px;
+  }
+}
+
+@media screen and (max-width: 1025px) and (min-width: 391px) {
+  .post {
+    width: 46%;
+  }
+  .post__item {
+    height: 300px;
+    overflow: scroll;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .sobre-mi__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .sobre-mi__info {
+    text-align: center;
+    height: auto;
+    min-height: 450px;
+  }
+  .sobre-mi__img {
+    overflow: hidden;
+  }
+  .projects {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .project {
+    width: 45%;
+  }
+  .project--9 {
+    width: 95%;
   }
 }
 /*# sourceMappingURL=style.css.map */

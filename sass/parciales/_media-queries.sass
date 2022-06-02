@@ -1,6 +1,6 @@
 @import "_variables.sass"
 
-@media screen and (max-width: 320px)
+@media screen and (max-width: 390px)
   .header__nav
     border-radius: 0
   
@@ -35,6 +35,10 @@
   
   a[href="#lateral"]
     display: block
+
+  .active
+    color: $color-ca
+    font-style: italic
   
   .close
     display: block
@@ -129,7 +133,10 @@
     overflow: hidden
   
   .post__list 
-    width: 300px
+    width: 100%
+    display: flex
+    justify-content: center
+    align-content: center
   
   .post__item 
     height: 300px
@@ -142,22 +149,22 @@
   
   .post__paragraph 
     font-size: 0.7rem
-  
-  .sobre-mi__container 
-    display: flex
-  
-  .sobre-mi__title 
-    font-size: 2rem
-  
-  .sobre-mi__work 
-    font-size: 1.2rem
-  
-  .sobre-mi__description 
-    font-size: 0.6rem
-    line-height: 20px
-  
-  .sobre-mi__img 
-    display: none
+
+  .sobre-mi
+    &__info
+      text-align: center
+    &__container 
+      display: flex
+      flex-direction: column
+    &__title 
+      font-size: 2rem
+    &__work 
+      font-size: 1.2rem
+    &__description 
+      font-size: 0.6rem
+      line-height: 20px
+    &__img 
+      display: none
   
   .galeria__title 
     font-size: 1.4rem
@@ -167,13 +174,14 @@
     overflow: hidden
   
   .projects 
-    margin-left: 30px
-    display: grid
-    grid-template-columns: repeat(1, 300px)
-    grid-template-rows: repeat(9, 300px)
+    margin: 0
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
   
-  .project 
-    margin-right: 40px
+  .project
+    width: 90%
     &__info
       margin-top: 12rem
       align-items: center
@@ -192,3 +200,33 @@
   
   .map 
     height: 300px
+
+@media screen and (max-width: 1025px) and (min-width: 391px)
+  .post
+    width: 46%
+  .post__item
+    height: 300px
+    overflow: scroll
+    margin: 0 auto
+    margin-top: 10px
+    margin-bottom: 10px
+  .sobre-mi
+    &__container
+      display: flex
+      flex-direction: column
+    &__info
+      text-align: center
+      height: auto
+      min-height: 450px
+    &__img
+      overflow: hidden
+  .projects
+    margin: 0
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-evenly
+  .project
+    width: 45%
+    &--9
+      width: 95%
