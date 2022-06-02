@@ -28,24 +28,24 @@
   align-items: center
   transition: all 800ms
   &__info
-    margin-top: 18rem
+    margin-top: 20rem
     display: flex
     flex-direction: column
     justify-content: center
     align-items: center
-    background: $color-24
-    padding: 1rem
+    background: $color-1e
     width: 100%
   &:hover
+    z-index: 0
     cursor: pointer
     box-shadow: 0 0 20px 0px rgba(202, 62, 71, 0.5)
     border-color: $color-ca
+    transform: scale(1.05)
   &__title
-    background: $color-6c
+    background: $color-1e
     color: white
-    border-radius: 2rem 2rem 0 0
     padding: 0.6rem
-    width: 250px
+    width: 100%
     margin: 0
     text-align: center
   &--1
@@ -70,4 +70,4 @@
 .badge-modify
   background-color: $color-ca !important //tuve que implementar un importanta aqui si o si ya que bootstrap tiene asignado un !important en la clas bg-secondary y no me permitia cambiar el color sino
   border-radius: 0 0 2rem 2rem
-  width: 250px
+  width: 100%

@@ -15,6 +15,10 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+input[type="submit"] {
+  background-color: white;
+}
+
 .header {
   background-color: #1e1e1e;
   width: 100%;
@@ -26,6 +30,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  z-index: 4;
 }
 
 .header__logo {
@@ -466,28 +471,28 @@ a[href="#lateral"] {
 }
 
 .project__info {
-  margin-top: 18rem;
+  margin-top: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #242424;
-  padding: 1rem;
+  background: #1e1e1e;
   width: 100%;
 }
 
 .project:hover {
+  z-index: 0;
   cursor: pointer;
   box-shadow: 0 0 20px 0px rgba(202, 62, 71, 0.5);
   border-color: #ca3e47;
+  transform: scale(1.05);
 }
 
 .project__title {
-  background: #6C757D;
+  background: #1e1e1e;
   color: white;
-  border-radius: 2rem 2rem 0 0;
   padding: 0.6rem;
-  width: 250px;
+  width: 100%;
   margin: 0;
   text-align: center;
 }
@@ -531,7 +536,7 @@ a[href="#lateral"] {
 .badge-modify {
   background-color: #ca3e47 !important;
   border-radius: 0 0 2rem 2rem;
-  width: 250px;
+  width: 100%;
 }
 
 .contact__title {
