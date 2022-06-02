@@ -470,7 +470,7 @@ a[href="#lateral"] {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   background: #242424;
   padding: 1rem;
   width: 100%;
@@ -485,8 +485,11 @@ a[href="#lateral"] {
 .project__title {
   background: #6C757D;
   color: white;
-  border-radius: 2rem;
+  border-radius: 2rem 2rem 0 0;
   padding: 0.6rem;
+  width: 250px;
+  margin: 0;
+  text-align: center;
 }
 
 .project--1 {
@@ -527,8 +530,8 @@ a[href="#lateral"] {
 
 .badge-modify {
   background-color: #ca3e47 !important;
-  border-radius: 2rem;
-  margin-left: 0.4rem;
+  border-radius: 0 0 2rem 2rem;
+  width: 250px;
 }
 
 .contact__title {
