@@ -1,39 +1,35 @@
 @import "_variables.sass"
 
-.sobre-mi__container
-  background-color: $color-1e
-  margin-top: 120px
-  overflow: hidden
-  width: 100%
-  display: grid
-  grid-template-columns: 50% 50%
-  grid-template-rows: 90vh
-  grid-template-areas: "sobre-mi__img sobre-mi__info"
-  line-height: 35px
-
-.sobre-mi__img 
-  grid-area: sobre-mi__img
-  overflow: hidden
-  height: 100%
-  width: 100%
-
-.sobre-mi__info 
-  grid-area: sobre-mi__info
-  overflow: hidden
-  background-color: $color-1e
-  padding: 1rem
-  color: white
-
-.sobre-mi__title
-  font-size: 4rem
-
-.sobre-mi__work 
-  font-size: 2rem
-
-.sobre-mi__description 
-  font-size: 1.1rem
-  text-align: justify
-  margin-top: 1rem
+.sobre-mi
+  &__container
+    background-color: $color-1e
+    margin-top: 120px
+    overflow: hidden
+    width: 100%
+    display: grid
+    grid-template-columns: 50% 50%
+    grid-template-rows: 90vh
+    grid-template-areas: "sobre-mi__img sobre-mi__info"
+    line-height: 35px
+  &__img 
+    grid-area: sobre-mi__img
+    overflow: hidden
+    height: 100%
+    width: 100%
+  &__info 
+    grid-area: sobre-mi__info
+    overflow: hidden
+    background-color: $color-1e
+    padding: 1rem
+    color: white
+  &__title
+    font-size: 4rem
+  &__work 
+    font-size: 2rem
+  &__description 
+    font-size: 1.1rem
+    text-align: justify
+    margin-top: 1rem
 
 .animate-charcter 
   background-image: linear-gradient(-225deg,#622938 0%,#8b616c 29%,#3b2c40 67%,#ffffff 100%)

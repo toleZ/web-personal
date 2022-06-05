@@ -1,4 +1,6 @@
 @import "_variables.sass"
+.hide
+  display: none
 
 .header
   background-color: $color-1e
@@ -12,40 +14,39 @@
   justify-content: space-between
   align-items: center
   z-index: 4
+  &__logo
+    width: 100px
+    height: 100px
+    margin-left: 1rem
+  &__nav
+    background-color: $color-41
+    border-radius: 2rem
+    margin-right: 1rem
+    padding: 1rem
 
-.header__logo
-  width: 100px
-  height: 100px
-  margin-left: 1rem
-
-.header__nav
-  background-color: $color-41
-  border-radius: 2rem
-  margin-right: 1rem
-  padding: 1rem
-
-.nav__list
-  margin: 0
-  padding: 0
-
-.nav__link
-  font-size: 1.3rem
-  color: white
-  text-decoration: none
-  transition: all 300ms
-
-.nav__link:hover
-  color: $color-ca
-  font-style: italic
-
-.nav__item
-  display: inline-block
-  list-style: none
-  margin: 4px
+.nav
+  &__list
+    margin: 0
+    padding: 0
+  &__link
+    font-size: 1.3rem
+    color: white
+    text-decoration: none
+    transition: all 300ms
+    &:hover
+      color: $color-ca
+      font-style: italic 
+  &__item
+    display: inline-block
+    list-style: none
+    margin: 4px
 
 a[href="#lateral"]
   text-decoration: none
   display: none
+  transition: all 300ms
+  &:active
+    transform: translateY(5px)
 
 .close
   display: none

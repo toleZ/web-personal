@@ -1,25 +1,36 @@
 @import "_variables.sass"
 
+/* MOBILE */
 @media screen and (max-width: 390px)
-  .header__nav
-    border-radius: 0
-  
-  .header__nav--mobile 
-    display: block
-    font-size: 70px
-    color: $color-ca
-    text-decoration: none
-  
-  .header__logo 
-    width: 70px
-    height: 70px
-  
-  .header__nav--mobile:hover 
-    cursor: pointer
-  
-  .nav__list
-    display: flex
-    flex-direction: column
+  .hide
+    display: inline-block
+    margin-right: 0.8rem
+
+  .header
+    &__nav
+      border-radius: 0
+      &--mobile 
+        display: block
+        font-size: 70px
+        color: $color-ca
+        text-decoration: none
+        &:hover
+          cursor: pointer
+    &__logo 
+      width: 70px
+      height: 70px
+
+  .nav
+    &__list
+      display: flex
+      flex-direction: column
+    &__link
+      border-left: 2px solid #fff
+      padding: 1rem
+      padding-left: 0
+      margin-bottom: 0.8rem
+      &:hover
+        border-color: $color-ca
   
   #lateral
     top: 0
@@ -39,50 +50,51 @@
   .active
     color: $color-ca
     font-style: italic
+    border-color: $color-ca
   
   .close
     display: block
     transition: all 300ms
     &:hover
       color: $color-ca
+      transform: rotate(360deg)
     &__link
       text-decoration: none
       color: white
-      font-size: 2rem
+      font-size: 3rem
+      text-align: center
 
-  .main__info 
-    width: 100%
-    overflow: hidden
-    display: grid
-    grid-template-columns: 100%
-    grid-template-rows: 200px 300px
-    grid-template-areas: 'main__data' 'main__img'
+  .main
+    &__info 
+      width: 100%
+      overflow: hidden
+      display: grid
+      grid-template-columns: 100%
+      grid-template-rows: 200px 300px
+      grid-template-areas: 'main__data' 'main__img'
+    &__data 
+      width: 100%
+      height: 100%
+      grid-area: main__data
+      overflow: hidden
+      background-color: $color-1e
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    &__img 
+      width: 100%
+      height: 100%
+      grid-area: main__img
+      overflow: hidden
   
-  .main__data 
-    width: 100%
-    height: 100%
-    grid-area: main__data
-    overflow: hidden
-    background-color: $color-1e
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-  
-  .data__title 
-    font-size: 2.5rem
-  
-  .data__work 
-    font-size: 1.6rem
-  
-  .data__description 
-    margin-top: 4px
-  
-  .main__img 
-    width: 100%
-    height: 100%
-    grid-area: main__img
-    overflow: hidden
+  .data
+    &__title 
+      font-size: 2.5rem
+    &__work 
+      font-size: 1.6rem
+    &__description 
+      margin-top: 4px
   
   .posts__title
     text-align: center
@@ -98,56 +110,50 @@
     padding: 0.5rem
     overflow: scroll
     width: 100%
-  
-  .post__date 
-    font-size: 0.6rem
-  
-  .post__title 
-    font-size: 0.8rem
-    margin: 0
-    margin-top: 0.4rem
-    padding: 0
-  
-  .post__parargraph 
-    font-size: 0.9rem
-    text-align: left
+    &__date 
+      font-size: 0.6rem
+    &__title 
+      font-size: 0.8rem
+      margin: 0
+      margin-top: 0.4rem
+      padding: 0
+    &__parargraph 
+      font-size: 0.9rem
+      text-align: left
+
   .footer
     margin-top: 0.5rem
+    &__title 
+      font-size: 0.8rem
   
-  .footer__title 
-    font-size: 0.8rem
-  
-  .form__label
-    margin-top: 0
-    margin-left: 6.2rem
-    font-size: 0.5rem
-  
-  .form__input 
-    width: 300px
-  
-  .form__input--submit 
-    width: 300px
+  .form
+    &__label
+      margin-top: 0
+      margin-left: 6.2rem
+      font-size: 0.5rem
+    &__input 
+      width: 300px
+      &--submit 
+        width: 300px
   
   .blog__posts 
     overflow: hidden
   
-  .post__list 
-    width: 100%
-    display: flex
-    justify-content: center
-    align-content: center
-  
-  .post__item 
-    height: 300px
-    overflow: scroll
-  
-  .post__title 
-    font-size: 1.4rem
-    margin-top: 2rem
-    margin-bottom: 0.5rem
-  
-  .post__paragraph 
-    font-size: 0.9rem
+  .post
+    &__list 
+      width: 100%
+      display: flex
+      justify-content: center
+      align-content: center
+    &__item 
+      height: 300px
+      overflow: scroll
+    &__title 
+      font-size: 1.4rem
+      margin-top: 2rem
+      margin-bottom: 0.5rem
+    &__paragraph 
+      font-size: 0.9rem
 
   .sobre-mi
     &__info
@@ -166,12 +172,12 @@
     &__img 
       display: none
   
-  .galeria__title 
-    font-size: 1.4rem
-  
-  .galeria__container 
-    width: 100%
-    overflow: hidden
+  .galeria
+    &__title 
+      font-size: 1.4rem
+    &__container 
+      width: 100%
+      overflow: hidden
   
   .projects 
     margin: 0
@@ -181,14 +187,14 @@
     align-items: center
   
   .project
+    height: 300px
     width: 90%
     &__info
       margin-top: 12rem
       align-items: center
-  
-  .project__img 
-    width: 300px
-    height: 250px
+    &__img 
+      width: 300px
+      height: 250px
   
   .contact__title
     font-size: 3rem
@@ -201,15 +207,17 @@
   .map 
     height: 300px
 
+/* TABLET */
 @media screen and (max-width: 1025px) and (min-width: 391px)
   .post
     width: 46%
-  .post__item
-    height: 300px
-    overflow: scroll
-    margin: 0 auto
-    margin-top: 10px
-    margin-bottom: 10px
+    &__item
+      height: 300px
+      overflow: scroll
+      margin: 0 auto
+      margin-top: 10px
+      margin-bottom: 10px
+
   .sobre-mi
     &__container
       display: flex
@@ -220,13 +228,14 @@
       min-height: 450px
     &__img
       overflow: hidden
+
   .projects
     margin: 0
     display: flex
     flex-direction: row
     flex-wrap: wrap
     justify-content: space-evenly
+
   .project
+    height: 350px
     width: 45%
-    &--9
-      width: 95%

@@ -1,14 +1,14 @@
-.galeria__container 
-  width: 100%
-  margin-top: 120px
-  background-color: $color-1e
-  margin-bottom: 1rem
-
-.galeria__title 
-  font-size: 3rem
-  color: white
-  padding: 1rem
-  font-style: italic
+.galeria
+  &__container 
+    width: 100%
+    margin-top: 120px
+    background-color: $color-1e
+    margin-bottom: 1rem
+  &__title 
+    font-size: 3rem
+    color: white
+    padding: 1rem
+    text-align: center
 
 .projects 
   margin-left: 30px
@@ -18,17 +18,17 @@
   gap: 20px
 
 .project
+  height: 400px
   border: 4px solid $color-52
   background-size: 100% 100%
   border-radius: 2rem
   overflow: hidden
   display: flex
   flex-direction: column
-  justify-content: center
+  justify-content: flex-end
   align-items: center
   transition: all 800ms
   &__info
-    margin-top: 20rem
     display: flex
     flex-direction: column
     justify-content: center
@@ -50,24 +50,24 @@
     text-align: center
   &__link
     text-decoration: none
-  &--1
+  &:nth-child(1)
     background-image: url(https://wpblog.zyro.com/cdn-cgi/image/w=700,q=85/wp-content/uploads/2020/09/anton-cristell-website-1200x750.png)
     background-size: cover
-  &--2
+  &:nth-child(2)
     background-image: url(https://wpblog.zyro.com/cdn-cgi/image/w=700,q=85/wp-content/uploads/2020/09/freya-mccartney-photography-website-1200x689.png)
-  &--3
+  &:nth-child(3)
     background-image: url(https://wpblog.zyro.com/cdn-cgi/image/w=700,q=85/wp-content/uploads/2020/09/john-green-portfolio-website-1200x769.png)
-  &--4
+  &:nth-child(4)
     background-image: url(https://wpblog.zyro.com/cdn-cgi/image/w=700,q=85/wp-content/uploads/2020/09/studio-schurk-portfolio-website-1200x763.png)
-  &--5
+  &:nth-child(5)
     background-image: url(https://wpblog.zyro.com/cdn-cgi/image/w=700,q=85/wp-content/uploads/2020/09/jennifer-fernandez-portfolio-website-1200x770.png)
-  &--6
+  &:nth-child(6)
     background-image: url(https://wpblog.zyro.com/cdn-cgi/image/w=700,q=85/wp-content/uploads/2020/09/sean-halpin-portfolio-website.png)
-  &--7
+  &:nth-child(7)
     background-image: url(https://wpblog.zyro.com/cdn-cgi/image/w=700,q=85/wp-content/uploads/2020/09/Tara-pixley-photography-portfolio.png)
-  &--8
+  &:nth-child(8)
     background-image: url(https://wpblog.zyro.com/cdn-cgi/image/w=700,q=85/wp-content/uploads/2020/09/Melanie-Daveid-portfolio-website-1200x772.png)
-  &--9
+  &:nth-child(9)
     background-image: url(https://wpblog.zyro.com/cdn-cgi/image/w=700,q=85/wp-content/uploads/2020/09/Gary-Vaynerchuk-portfolio-website-1200x773.png)
 
 .badge-modify

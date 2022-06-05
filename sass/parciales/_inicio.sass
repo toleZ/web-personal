@@ -4,58 +4,53 @@
   margin-top: 120px
   background-color: $color-1e
   width: 100%
+  &__info 
+    width: 100%
+    overflow: hidden
+    color: white
+    background-image: linear-gradient(153deg,rgba(98, 41, 56, 1) 30%,rgba(51, 44, 68, 1) 70%)
+    display: flex
+    flex-direction: row
+    align-items: center
+  &__data 
+    width: 70%
+    text-align: center
+  &__img 
+    width: 30%
+    display: flex
+    justify-content: center
+    align-items: center
+    overflow: hidden
+  &__posts 
+    background-color: $color-24
+    width: 100%
+    color: white
+    padding-top: 1rem
+    padding-bottom: 1rem
 
-.main__info 
-  width: 100%
-  overflow: hidden
-  color: white
-  background-image: linear-gradient(153deg,rgba(98, 41, 56, 1) 30%,rgba(51, 44, 68, 1) 70%)
-  display: flex
-  flex-direction: row
-  align-items: center
-
-.main__data 
-  width: 70%
-  text-align: center
-
-.data__title 
-  font-size: 5rem
-
-.data__work 
-  font-size: 2.5rem
-
-.data__description 
-  margin-top: 1rem
-  font-size: 1rem
-
-.main__img 
-  width: 30%
-  display: flex
-  justify-content: center
-  align-items: center
-  overflow: hidden
+.data
+  &__title 
+    font-size: 5rem
+  &__work 
+    font-size: 2.5rem
+  &__description 
+    margin-top: 1rem
+    font-size: 1rem
 
 .img__logo 
   height: 200%
   width: 200%
 
-.main__posts 
-  background-color: $color-24
-  width: 100%
-  color: white
-  padding-top: 1rem
-  padding-bottom: 1rem
-
-.posts__title 
-  text-align: center
-  font-size: 2.5rem
-
-.posts__container 
-  display: flex
-  flex-direction: row
-  flex-wrap: wrap
-  justify-content: center
-  align-items: center
+.posts
+  &__title 
+    text-align: center
+    font-size: 2.5rem
+  &__container 
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
 
 .post 
   width: 23%
@@ -66,23 +61,19 @@
   padding: 1rem
   transition: all 800ms
   background-image: url(../img/bckgrnd-post.png)
-
-.post:hover 
-  border: 4px solid $color-ca
-  background-image: url(../img/bckgrnd-hover.png)
-  cursor: pointer
-  box-shadow: 0 0 20px 0px rgba(202, 62, 71, 0.5)
-
-.post__date 
-  font-style: italic
-
-.post__title 
-  margin-top: 80px
-  margin-bottom: 5px
-  font-size: 1.4rem
-  position: static
-
-.post__parargraph 
-  font-size: 1rem
-  text-align: justify
-  margin-bottom: 1rem
+  &:hover 
+    border: 4px solid $color-ca
+    background-image: url(../img/bckgrnd-hover.png)
+    cursor: pointer
+    box-shadow: 0 0 20px 0px rgba(202, 62, 71, 0.5)
+  &__date 
+    font-style: italic
+  &__title 
+    margin-top: 80px
+    margin-bottom: 5px
+    font-size: 1.4rem
+    position: static
+  &__parargraph 
+    font-size: 1rem
+    text-align: justify
+    margin-bottom: 1rem
